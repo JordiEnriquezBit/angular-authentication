@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { User } from './shared/interfaces/user';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-autentification';
+
+  userLogedIn :boolean = false;
+  user: User =
+  {
+    name: 'aaaaa',
+    email: 'bbbbb',
+    password: 'ccccc'
+  };
 }

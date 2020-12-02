@@ -1,0 +1,8 @@
+<mat-toolbar color='primary'>
+  <span>Angular Authentication</span>
+  <button mat-button routerLink=''>Home</button>
+  <button *ngIf='userLogedIn' mat-button routerLink='profile'>Profile</button>
+  <button *ngIf='!userLogedIn' mat-button routerLink='login'>Login</button>
+  <button *ngIf='!userLogedIn' mat-button routerLink='register'>Register</button>
+  <button *ngIf='userLogedIn' mat-button>LogOut</button>
+</mat-toolbar>
